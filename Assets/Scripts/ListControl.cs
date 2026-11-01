@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class ListControll : MonoBehaviour
+public class ListControl : MonoBehaviour
 {
     
-    [Header("要展開/收合的清單面板")]
+    [Header("道具清單")]
     public GameObject ListPanel;
-    [Header("清單預設展開/收合")]
+    [Header("道具清單預設展開or收起")]
     public bool startExpanded = false;
 
     private void Start()
@@ -15,7 +15,7 @@ public class ListControll : MonoBehaviour
             ListPanel.SetActive(startExpanded);
         }
     }
-    public void ToggleDropdown()
+    public void Dropdown()
     {
         if (ListPanel != null)
         {
